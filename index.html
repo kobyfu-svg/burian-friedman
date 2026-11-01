@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="סקירה אינטראקטיבית של מאמרי פליקס בוריאן ואריך פרידמן בכתב העת מתקופת האבן, 1961–2017">
+<meta property="og:title" content="בעקבות הציידים בחולות"><meta property="og:description" content="פליקס בוריאן ואריך פרידמן – שני חובבים שהפכו לחוקרי הפרהיסטוריה של הארץ">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>בעקבות הציידים בחולות</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Assistant:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field notebook — narrow reading column, index-card catalogue of articles, survey map, typology board */
+:root{
+  --bg:#EEEDE8;          /* white patina on flint */
+  --paper:#F8F7F3;
+  --ink:#1E2226;         /* fresh flint core */
+  --muted:#5D6166;
+  --line:#CFCCC3;
+  --hamra:#A3452A;       /* red hamra soil of the coastal ridges */
+  --loess:#B98A3E;       /* western Negev loess */
+  --flint:#6E6A63;
+  --flint-2:#8C877E;
+  --sea:#C9D6DB;
+  --land:#E3DED2;
+  --chip:#E4E1D8;
+  --f-display:"Frank Ruhl Libre","David","Times New Roman",serif;
+  --f-body:"Assistant","Arial Hebrew","Segoe UI",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17191B;--paper:#1F2225;--ink:#E9E6DF;--muted:#A3A39D;--line:#3A3D40;
+  --hamra:#E07A57;--loess:#D9AE62;--flint:#9C978D;--flint-2:#7A766E;--sea:#22323A;--land:#2A2C2B;--chip:#2B2E31;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17191B;--paper:#1F2225;--ink:#E9E6DF;--muted:#A3A39D;--line:#3A3D40;
+  --hamra:#E07A57;--loess:#D9AE62;--flint:#9C978D;--flint-2:#7A766E;--sea:#22323A;--land:#2A2C2B;--chip:#2B2E31;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.7;direction:rtl;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--hamra)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--hamra);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1080px;margin:0 auto}
+.mono{font-family:var(--f-mono);font-size:.82em;letter-spacing:.02em}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.2;margin:0}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.12em;color:var(--hamra);text-transform:uppercase}
+
+/* nav */
+nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)))}
+nav.top .in{max-width:1080px;margin:0 auto;display:flex;gap:4px 18px;align-items:center;overflow-x:auto;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));white-space:nowrap;scrollbar-width:none}
+nav.top a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:600}
+nav.top a:hover{color:var(--ink)}
+nav.top .brand{font-family:var(--f-display);font-weight:900;color:var(--ink);margin-inline-end:auto;font-size:1.05rem}
+
+/* hero */
+header.hero{padding-block:48px 28px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:end}
+.hero h1{font-size:clamp(2.6rem,7vw,5rem);font-weight:900;letter-spacing:-.01em}
+.hero h1 span{display:block;color:var(--hamra)}
+.hero .lede{margin-top:20px;font-size:1.15rem;max-width:36em;color:var(--ink)}
+.hero .names{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px 28px;font-family:var(--f-display);font-size:1.15rem}
+.hero .names b{font-weight:700}
+.hero .names small{display:block;font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.ledger{border-top:2px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:0}
+.ledger div{padding:14px 0 12px;border-bottom:1px solid var(--line)}
+.ledger div:nth-child(odd){padding-inline-end:14px;border-inline-end:1px solid var(--line)}
+.ledger div:nth-child(even){padding-inline-start:14px}
+.ledger b{display:block;font-family:var(--f-display);font-size:2rem;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.ledger span{font-size:.9rem;color:var(--muted)}
+.src{font-size:.82rem;color:var(--muted);margin-top:10px}
+
+section{padding-block:56px 8px}
+.sec-head{display:grid;gap:10px;margin-bottom:26px;max-width:46em}
+.sec-head p{color:var(--muted);font-size:1.05rem}
+
+/* story */
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 48px}
+.story p+p{margin-top:14px}
+.story .col{min-width:0}
+.quote{margin-top:22px;border-inline-start:3px solid var(--hamra);padding-inline-start:16px;font-family:var(--f-display);font-size:1.25rem;line-height:1.5}
+.quote cite{display:block;font-family:var(--f-body);font-style:normal;font-size:.85rem;color:var(--muted);margin-top:6px}
+.lifeline{margin-top:8px;border-top:1px solid var(--line)}
+.lifeline li{list-style:none;display:grid;grid-template-columns:5.2em minmax(0,1fr);gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.lifeline ul{padding:0;margin:0}
+.lifeline .y{font-family:var(--f-mono);font-size:.85rem;color:var(--hamra);padding-top:2px;font-variant-numeric:tabular-nums}
+
+/* method */
+.method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:2px solid var(--ink)}
+.method article{padding:20px 18px 22px 0;border-bottom:1px solid var(--line);min-width:0}
+.method article:not(:nth-child(3n)){border-inline-end:1px solid var(--line);padding-inline-end:18px}
+.method article:not(:nth-child(3n+1)){padding-inline-start:18px}
+.method .num{font-family:var(--f-display);font-size:2.1rem;font-weight:700;color:var(--hamra);line-height:1;font-variant-numeric:tabular-nums}
+.method h3{margin:8px 0 6px;font-size:1.1rem}
+.method p{font-size:.96rem;color:var(--ink)}
+.method .from{display:block;margin-top:8px;font-size:.8rem;color:var(--muted)}
+
+/* map */
+.mapgrid{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:32px;align-items:start}
+.mapbox{background:var(--paper);border:1px solid var(--line);padding:10px;border-radius:4px}
+.mapbox svg{display:block;width:100%;height:auto;direction:ltr}
+.mapnote{font-size:.8rem;color:var(--muted);margin-top:6px}
+.sites{display:grid;gap:0;border-top:2px solid var(--ink)}
+.site{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:12px;padding:12px 4px;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-inline:0;border-top:0;text-align:inherit;font:inherit;color:inherit;width:100%}
+.site:hover,.site.on{background:var(--chip)}
+.site .no{font-family:var(--f-mono);font-size:.85rem;color:var(--hamra);padding-top:3px}
+.site b{font-family:var(--f-display);font-size:1.08rem}
+.site p{font-size:.93rem;color:var(--muted);margin-top:2px}
+.dot{fill:var(--hamra);stroke:var(--paper);stroke-width:1.5;transition:r .15s}
+.dot.on{fill:var(--ink)}
+.town{fill:var(--muted);font-family:var(--f-body);font-size:9px}
+.sitelbl{fill:var(--ink);font-family:var(--f-mono);font-size:8.5px}
+
+/* articles */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.filters button{font:inherit;font-size:.9rem;font-weight:600;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:6px 14px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters .count{font-family:var(--f-mono);font-size:.78rem;opacity:.75;margin-inline-start:4px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:3px;min-width:0;position:relative;
+  background-image:linear-gradient(transparent 31px,var(--line) 32px);background-size:100% 32px;background-position:0 64px}
+.card[hidden]{display:none}
+.card .hd{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:12px 16px 8px;border-bottom:2px solid var(--hamra);background:var(--paper)}
+.card .yr{font-family:var(--f-display);font-weight:900;font-size:1.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.card .vol{font-family:var(--f-mono);font-size:.76rem;color:var(--muted);text-align:left;direction:rtl}
+.card .bd{padding:12px 16px 14px;background:var(--paper)}
+.card h3{font-size:1.15rem}
+.card .en{font-size:.85rem;color:var(--muted);direction:ltr;text-align:left;margin-top:4px;font-style:italic}
+.card .by{font-size:.88rem;color:var(--muted);margin-top:6px}
+.card .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--ink);margin-top:8px}
+.card .find{margin-top:10px;font-size:.96rem}
+.card details{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+.card summary{cursor:pointer;font-weight:700;color:var(--hamra);font-size:.92rem;list-style:none}
+.card summary::-webkit-details-marker{display:none}
+.card summary::before{content:"+ ";font-family:var(--f-mono)}
+.card details[open] summary::before{content:"– "}
+.card .learn{margin-top:6px;font-size:.95rem}
+.card .note{margin-top:8px;font-size:.82rem;color:var(--muted)}
+
+/* typology */
+.typo{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px}
+.tp{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:10px 6px 10px;text-align:center;cursor:pointer;font:inherit;color:inherit;display:grid;justify-items:center;gap:4px;min-width:0}
+.tp svg{width:46px;height:80px}
+.tp svg path,.tp svg polygon{fill:var(--flint);stroke:var(--ink);stroke-width:1.2;stroke-linejoin:round}
+.tp .n{font-family:var(--f-mono);font-size:.8rem;color:var(--hamra)}
+.tp .nm{font-size:.82rem;font-weight:600;line-height:1.25}
+.tp[aria-pressed="true"]{border-color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);background:var(--chip)}
+.tp[aria-pressed="true"] svg path,.tp[aria-pressed="true"] svg polygon{fill:var(--hamra)}
+.verdict{margin-top:18px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:24px;align-items:start}
+.periods{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.pd{border-top:6px solid var(--line);padding-top:6px;font-size:.8rem;line-height:1.3;color:var(--muted)}
+.pd b{display:block;color:var(--ink);font-size:.85rem}
+.pd.hit{border-top-color:var(--hamra);color:var(--ink)}
+.pd.hit b{color:var(--hamra)}
+.answer{background:var(--paper);border:1px solid var(--line);border-inline-start:4px solid var(--hamra);padding:14px 16px;border-radius:3px;min-width:0}
+.answer h3{font-size:1.1rem;margin-bottom:6px}
+.answer p{font-size:.95rem}
+.btn{font:inherit;font-size:.88rem;font-weight:700;border:1px solid var(--ink);background:transparent;color:var(--ink);padding:5px 12px;border-radius:3px;cursor:pointer;margin-top:10px}
+.typo-desc{margin-top:22px;columns:2;column-gap:40px;font-size:.93rem}
+.typo-desc p{break-inside:avoid;margin-bottom:8px}
+.typo-desc b{font-family:var(--f-mono);color:var(--hamra);font-weight:500}
+
+/* lessons */
+.lessons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.lessons div{padding:16px 0;border-top:1px solid var(--line);min-width:0}
+.lessons h3{font-size:1.15rem;margin-bottom:4px}
+.lessons p{font-size:.98rem}
+
+/* refs */
+.refs{font-size:.9rem;columns:2;column-gap:40px}
+.refs li{break-inside:avoid;margin-bottom:8px}
+.refs ol{padding-inline-start:1.4em;margin:0}
+.callout{margin-top:22px;background:var(--paper);border:1px dashed var(--loess);padding:14px 16px;font-size:.92rem;border-radius:3px}
+footer{padding-block:48px 40px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);margin-top:56px}
+
+@media (max-width:860px){
+  header.hero,.story,.mapgrid,.verdict{grid-template-columns:minmax(0,1fr)}
+  .method{grid-template-columns:minmax(0,1fr)}
+  .method article{padding-inline:0!important;border-inline-end:0!important}
+  .cards,.lessons{grid-template-columns:minmax(0,1fr)}
+  .typo{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .typo-desc,.refs{columns:1}
+  .periods{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:10px}
+  .mapgrid{max-width:520px}
+}
+</style>
+</head><body>
+
+<nav class="top" aria-label="ניווט">
+  <div class="in">
+    <span class="brand">בוריאן · פרידמן</span>
+    <a href="#story">הסיפור</a>
+    <a href="#method">השיטה</a>
+    <a href="#map">האתרים</a>
+    <a href="#articles">המאמרים</a>
+    <a href="#arrowheads">ראשי החץ</a>
+    <a href="#lessons">מה לוקחים</a>
+    <a href="#refs">מקורות</a>
+  </div>
+</nav>
+
+<div class="wrap">
+<header class="hero">
+  <div>
+    <div class="eyebrow">מתקופת האבן · 1961–2017</div>
+    <h1>בעקבות הציידים<span>בחולות</span></h1>
+    <p class="lede">שני חובבים, ייקים מאוסטריה, בלי תואר אקדמי, יצאו בכל שבת לחולות מישור החוף ולדיונות הנגב המערבי. במשך 42 שנה הם גילו עשרות אתרים, אספו ותיעדו כמאה וחמישים אלף פריטי צור, ובנו שיטה לתיארוך אתרים לפי ראשי חץ. זו סקירה של כל מאמריהם בכתב העת של העמותה הישראלית לפרהיסטוריה, ושל מה שאפשר ללמוד מהם גם היום.</p>
+    <div class="names">
+      <div><b>פליקס בוריאן</b><small>1924 – 27.4.2017</small></div>
+      <div><b>אריך פרידמן</b><small>30.4.1920 – 1.5.1994</small></div>
+    </div>
+  </div>
+  <div>
+    <div class="ledger" role="list">
+      <div role="listitem"><b>42</b><span>שנות שותפות, 1952–1994</span></div>
+      <div role="listitem"><b>~70</b><span>אתרים פרהיסטוריים שלא היו ידועים</span></div>
+      <div role="listitem"><b>1,596</b><span>סיורי מחקר עד מאי 1977</span></div>
+      <div role="listitem"><b>30+</b><span>מאמרים מדעיים משותפים</span></div>
+      <div role="listitem"><b>150,000</b><span>פריטי צור באוסף המאוחד</span></div>
+      <div role="listitem"><b>12,000</b><span>ראשי חץ מצור</span></div>
+    </div>
+    <p class="src">מקורות המספרים: לב-ידון 2017; בוריאן ופרידמן 1977–8 ("החץ").</p>
+  </div>
+</header>
+
+<!-- STORY -->
+<section id="story">
+  <div class="sec-head">
+    <div class="eyebrow">הסיפור</div>
+    <h2>שני נערים שברחו מאוסטריה, ידידות של חמישים שנה</h2>
+  </div>
+  <div class="story">
+    <div class="col">
+      <p>אריך פרידמן נולד ב־1920 בפריין אן דר ראקס, עיירה קטנה סמוך לווינה, למשפחה יהודית שהחזיקה חנות כל-בו. פליקס בוריאן צעיר ממנו בארבע שנים. שניהם עלו לארץ ב־1938, אחרי סיפוח אוסטריה לגרמניה הנאצית. אריך הגיע לבדו, כעולה בלתי לגאלי, לתל אביב ועבד בעבודות מזדמנות. בתנועת הנוער "תכלת לבן", שקיבצה צעירים דוברי גרמנית, הכיר את פליקס. משנת 1940 הם היו חברים קרובים.</p>
+      <p>ב־1952, בעקבות היכרות עם אספן העתיקות שתיל מנהריה, החליטו להקדיש כל שעה פנויה לגילוי אתרים פרהיסטוריים. בתחילה אספו בעיקר ראשי חץ. עם הזמן למדו לתעד בשיטות מדעיות ועברו לאיסוף שיטתי של כל הממצאים באתר. את הממצאים חילקו ביניהם שווה בשווה, ופריט נדיר "נדד" מדי חודש מבית לבית, בדייקנות ייקית מופלגת.</p>
+      <p>הם לא עבדו באקדמיה. אריך עבד בבית חרושת לאריגה, ופליקס החזיק מוסך ועסק למכירת מכוניות פולקסווגן. ובכל זאת, כפי שכתב שמחה לב-ידון, הם תרמו לחקר הפרהיסטוריה של ישראל יותר מרבים אחרים.</p>
+      <p class="quote">"מעולם לא ניתנה תשובה שלילית למי שרצה ללמוד את האוספים."<cite>תמר נוי, "אריך פרידמן – שנה לפטירתו", מתקופת האבן כ"ו</cite></p>
+    </div>
+    <div class="col">
+      <p>האוספים עמדו תמיד לרשות הציבור. ביתו של אריך היה המקום שבו חוקרים באו ללמוד; אריך הכין את החומר ועזר במיון, בספירה ובמדידה. בביתו התכנסו ישיבות ועד העמותה הישראלית לפרהיסטוריה, שהוא היה ממייסדיה וגזברה. אחרי פרישתו הזמין אותו אבי גופר ללמד טיפולוגיה של כלי צור במכון לארכיאולוגיה באוניברסיטת תל אביב.</p>
+      <p>הם שחזרו את דרכי הייצור וההרכבה של כלים פרהיסטוריים ברמה כזו, שמוזיאונים רבים בארץ השתמשו בשחזורים שלהם. כדי להבין איך כלים כאלה שימשו בפועל, נסעו לראות במו עיניהם שבטי ציידים-לקטים, בין השאר בקניה ובפפואה גינאה החדשה.</p>
+      <div class="lifeline">
+        <ul>
+          <li><span class="y">1938</span><span>בריחה מאוסטריה ועלייה לארץ</span></li>
+          <li><span class="y">1952</span><span>תחילת האיסוף המשותף</span></li>
+          <li><span class="y">1954</span><span>תחילת הסקר השיטתי בחולות מישור החוף</span></li>
+          <li><span class="y">1956</span><span>גילוי גבעת הפרסה צפונית לאשדוד</span></li>
+          <li><span class="y">1960–61</span><span>שתי עונות חפירה בגבעת הפרסה, בהנהלת יעקב עולמי</span></li>
+          <li><span class="y">1965–77</span><span>סקר חולות חלוצה ומשולש נחלי לבן, רות וניצנה</span></li>
+          <li><span class="y">1976</span><span>תערוכת "בעקבות הציידים הקדומים" במוזיאון ישראל</span></li>
+          <li><span class="y">1979</span><span>הרשימה הטיפולוגית של ראשי החץ ולהבי המגל</span></li>
+          <li><span class="y">1.5.1994</span><span>פטירת אריך פרידמן</span></li>
+          <li><span class="y">27.4.2017</span><span>פטירת פליקס בוריאן. האוסף המאוחד מוצג במוזיאון הפתוח בתפן</span></li>
+        </ul>
+      </div>
+      <p class="quote">קובי, הבכור בנכדים, הצטרף לאריך בסיוריו הרבים. ביום הלוויה נשאר אחרון ליד הקבר ואמר: "סבא, אני אמשיך".<cite>על פי תמר נוי, מתקופת האבן כ"ו (1994–5)</cite></p>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section id="method">
+  <div class="sec-head">
+    <div class="eyebrow">השיטה</div>
+    <h2>חובבים שעבדו כמו מקצוענים</h2>
+    <p>כל אחד מהמאמרים מראה עוד הרגל עבודה. הנה ההרגלים שחוזרים לאורך ארבעים שנה, עם המספרים שהם עצמם רשמו.</p>
+  </div>
+  <div class="method">
+    <article><div class="num">500</div><h3>יומן לכל סיור</h3><p>עד 1963 ערכו כחמש מאות סיורים בני יום, ועל כל אחד ניהלו רשימה מדויקת ביומן. עד מאי 1977 הגיעו ל־1,596 סיורים.</p><span class="from">עשר שנות סקר (1963); החץ (1977–8)</span></article>
+    <article><div class="num">149</div><h3>לחזור שוב ושוב לאותו אתר</h3><p>לגבעת הפרסה חזרו 149 פעמים, לאתר 109 שבעים ושבע פעמים, לאתר 103 שלושים וחמש. דיונה שנודדת חושפת בכל פעם ממצא אחר.</p><span class="from">1963; 1988; 1987</span></article>
+    <article><div class="num">7,500</div><h3>כרטסת לכל ראש חץ</h3><p>כל פריט סומן במספר האתר. כל ראש חץ נרשם בכרטיס עם צורה, גודל ומשקל במספרי צופן. מהכרטסת הזו נולדה הטיפולוגיה של 1979.</p><span class="from">החץ (1977–8)</span></article>
+    <article><div class="num">125</div><h3>רשת ריבועים ונפה</h3><p>באתר 109 חילקו את השטח ל־125 ריבועים של 2×2 מטר וניפו 47 מהם. באתרים 104 ו־110 אספו כל פריט, גם הזעיר ביותר, כדי שהמדגם ייצג את האתר.</p><span class="from">1974; 1976; 1982</span></article>
+    <article><div class="num">6 מ'</div><h3>ניסוי בשטח</h3><p>ב־1956 תקעו יתדות ברזל בחול ומדדו שהדיונה זזה כ־6 מטרים צפונה-מזרחה בשבע שנים. בדקו איך צורת החפץ קובעת לאן הוא נסחף. ב־1993 הרכיבו להבים על ידיות והשאירו אותם חצי שנה באוויר הפתוח כדי לבדוק איך נוצרת פטינה.</p><span class="from">1963; 1994–5</span></article>
+    <article><div class="num">≈</div><h3>לשחזר, לא רק לתאר</h3><p>הם לא הסתפקו בתיאור הכלי. הם שחזרו איך מרכיבים ראש חץ על קנה, איך מפעילים מקדח בקשת ואיך יוצרים כל שלב בייצור, והשוו לעדויות אתנוגרפיות מרחבי העולם.</p><span class="from">1977–8; 1985</span></article>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map">
+  <div class="sec-head">
+    <div class="eyebrow">האתרים</div>
+    <h2>מחדרה ועד ניצנה</h2>
+    <p>שני אזורי עבודה גדולים: רכסי הכורכר והחמרה של מישור החוף, ודיונות הלס של הנגב המערבי. בחרו אתר ברשימה כדי לסמן אותו במפה. המיקומים לפי נקודות הציון שבמאמרים (רשת ישראל הישנה).</p>
+  </div>
+  <div class="mapgrid">
+    <div>
+      <div class="mapbox">
+        <svg id="mapsvg" direction="ltr" viewBox="0 0 300 640" role="img" aria-label="מפה סכמטית של מישור החוף והנגב המערבי עם אתרי הסקר"></svg>
+      </div>
+      <p class="mapnote">מפה סכמטית, לא בקנה מידה מדויק. מיקום גבעת הפרסה וחולות חלוצה משוער.</p>
+    </div>
+    <div class="sites" id="sitelist"></div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section id="articles">
+  <div class="sec-head">
+    <div class="eyebrow">המאמרים</div>
+    <h2>כרטסת המאמרים</h2>
+    <p>כל המאמרים שבתיקייה, לפי סדר הופעתם ב"מתקופת האבן". לכל כרטיס: מה מצאו, ובלחיצה, מה אפשר ללמוד מזה היום.</p>
+  </div>
+  <div class="filters" id="filters" role="toolbar" aria-label="סינון לפי נושא"></div>
+  <div class="cards" id="cards"></div>
+</section>
+
+<!-- ARROWHEADS -->
+<section id="arrowheads">
+  <div class="sec-head">
+    <div class="eyebrow">נסו בעצמכם</div>
+    <h2>מתארכים אתר לפי ראשי החץ</h2>
+    <p>זה הרעיון המרכזי של מאמר 1979: רשימה קצרה של תשעה טיפוסים, ש"כל חוקר וחובב" יכול להשתמש בה. הרכב הטיפוסים באתר מלמד לאיזה שלב הוא שייך, גם כשאין בו חומר לתיארוך בפחמן 14. סמנו את הטיפוסים ש"מצאתם" באתר.</p>
+  </div>
+  <div class="typo" id="typo"></div>
+  <div class="verdict">
+    <div class="answer" id="answer" aria-live="polite"></div>
+    <div>
+      <div class="periods" id="periods"></div>
+      <p class="mapnote" style="margin-top:10px">פישוט של טבלת השכיחויות במאמר 1979. החוקרים עצמם השתמשו גם בלהבי המגל ובשכיחות היחסית של כל טיפוס, לא רק בנוכחותו.</p>
+    </div>
+  </div>
+  <div class="typo-desc" id="typodesc"></div>
+</section>
+
+<!-- LESSONS -->
+<section id="lessons">
+  <div class="sec-head">
+    <div class="eyebrow">מה לוקחים</div>
+    <h2>מה אפשר ללמוד מהם היום</h2>
+  </div>
+  <div class="lessons">
+    <div><h3>תיעוד הוא הממצא</h3><p>רוב האתרים שגילו במישור החוף נעלמו תחת בנייה, כבישים ופיתוח. מה שנשאר הם היומנים, הכרטסת והפרסומים. בזכותם אפשר היה ב־1998 לנתח מחדש את אתר 18M בנחל פולג, עשרות שנים אחרי שנהרס האזור.</p></div>
+    <div><h3>כלי פשוט מנצח כלי מושלם</h3><p>הם בחרו בכוונה רשימה של תשעה טיפוסים בלבד, עם הגדרות פשוטות. הרשימה אומצה, בשינויים, בידי בר-יוסף (1981) וגופר (1985). כלי שאנשים באמת משתמשים בו שווה יותר מכלי מפורט שאיש לא מפעיל.</p></div>
+    <div><h3>לבדוק מה בדיוק מתארכים</h3><p>חרוזי ביצת יען מאתר 109 נתנו תאריך של כ־19,650 לפנה"ס, אבל האתר עצמו בן כ־8,000 לפנה"ס. ההסבר: יושבי האתר העדיפו לעשות חרוזים מקליפות עתיקות, שכבר היו בנות אלפי שנים. תאריך נכון על החומר אינו בהכרח תאריך האתר.</p></div>
+    <div><h3>החריג מספר סיפור</h3><p>ב־1984 הציע אריך פרידמן להשוות אתרים לפי ראשי חץ חריגים דווקא. אומנים ששלטו בחומר לא ייצרו צורה חריגה במקרה, ולכן צורה חריגה משותפת מעידה על קרבה בין קבוצות. כך קשר את אתרי חלוצה לנחל רעואל ולתאריכים שלו.</p></div>
+    <div><h3>ניסוי קטן עונה על שאלה גדולה</h3><p>שלושה להבים מורכבים על ידית, חצי שנה בחוץ, ותשובה: פטינה נוצרת מהר, ורק על החלק החשוף. מכאן אפשר לזהות כלים שהיו מורכבים על ידית כבר בתקופה המוסטרית, לפני 54,000 שנה.</p></div>
+    <div><h3>ידע נועד להיות פתוח</h3><p>האוספים היו פתוחים לכל חוקר, הם פרסמו יחד עם אנשי אקדמיה רבים, ואריך לימד את הדור הבא. לפי צוואתם המשותפת משנת 1976 אוחד האוסף, והיום הוא מוצג לציבור במוזיאון הפתוח בתפן.</p></div>
+  </div>
+</section>
+
+<!-- REFS -->
+<section id="refs">
+  <div class="sec-head">
+    <div class="eyebrow">מקורות</div>
+    <h2>רשימת המאמרים</h2>
+    <p>כל הפרסומים מתוך "מתקופת האבן – כתב העת של העמותה הישראלית לפרהיסטוריה".</p>
+  </div>
+  <div class="refs"><ol id="reflist"></ol></div>
+  <div class="callout"><b>הערה על התיקייה כ"ו (1994–5):</b> קובץ התיאור בתיקייה "מאסף אפי-פליאוליתי מאזור נחל פולג" מתייחס למאמר 18X של ברקאי, בוריאן, פרידמן וגופר (עמ' 64–73), אבל הסריקות שבתיקייה הן של מאמר אחר מאותו כרך: "Hafting During Mousterian Times" (עמ' 8–31). הסקירה מבוססת על הסריקות, ומאמר 18X מופיע ברשימה לפי פרטיו הביבליוגרפיים בלבד.</div>
+</section>
+
+<footer>
+  נכתב על בסיס סריקות המאמרים מתוך אוסף אריך פרידמן ופליקס בוריאן. הציטוטים והמספרים לקוחים מהמאמרים עצמם; שמות האתרים ומספריהם לפי רשימות החוקרים.
+</footer>
+</div>
+
+<script>
+(function(){
+const THEMES={survey:"סקר ואתרים",typo:"טיפולוגיה ותיארוך",tech:"טכנולוגיה וניסוי",tribute:"הנצחה"};
+const A=[
+{y:"1961",vol:"כרך ב'",t:"survey",he:"גבעת הפרסה – אתר פריהיסטורי באזור חולות החוף בדרום הארץ",en:"Giv'at Haparsa: a prehistoric site on the southern coastal dunes",by:"פ. בוריאן, א. פרידמן",
+ find:"האתר התגלה ב־1956 על גבעה בצורת פרסה סמוך לשפך נחל לכיש, 600 מטר מהחוף. נמצאו 112 מוקדי אש ובורות, חרסים גסים, ו־1,265 כלי צור שנספרו ב־60 ביקורים עד סוף 1958. ראשי חץ (27%) ומשוריות בעלות שינון רחב היו הקבוצות הגדולות.",
+ learn:"על ראשי החץ הרבים ניכרים כל שלבי הייצור, מהתקלות בזמן הסיתות ועד הצורה הסופית. ממצא שטח גדול ואחיד מאפשר מסקנות טכנולוגיות ולא רק תיאור. האתר נתן את שמו לטיפוס ראש חץ: \"חוד הפרסה\".",site:"62",
+ note:"הסקר נעשה בשיתוף המהנדס יעקב עולמי מחיפה."},
+{y:"1963",vol:"כרך ו'–ז'",t:"survey",he:"עשר שנות סקר פריהיסטורי של עמק החוף מנחל חדרה עד נחל לכיש",en:"Ten years of prehistoric survey of the coastal plain dunes",by:"פ. בוריאן, א. פרידמן",
+ find:"סיכום הסקר שהחל ב־1954: כ־500 סיורים, 26 אתרים מתועדים, רובם מסוף הפליאולית העליון ועד התקופה הניאוליתית והכלקוליתית, על מחשופי חמרה ברכסי הכורכר. לכל אתר: מיקום, תאריך גילוי, ממצא וצבע פטינה.",
+ learn:"המאמר כולל תצפיות שדה מקוריות: מדידת נדידת החולות ביתדות ברזל, עדות לבורות מים שנחפרו עד מי התהום ליד החוף, וגילוי שצורת החפץ, ולא משקלו, קובעת כמה מהר הוא נסחף. ראשי חץ שטוחים מצטברים דווקא בשקעים גבוהים. כלומר: מיקום הממצא על פני השטח אינו בהכרח מקומו המקורי."},
+{y:"1970",vol:"כרך י'",t:"typo",he:"ראשי-חץ רוחביים ממישור החוף",en:"Transversal arrowheads from the coastal plain",by:"ע. בר-יוסף, פ. בוריאן, א. פרידמן",
+ find:"17 ראשי חץ רוחביים, עשויים מקטעי להבים, נמצאו במישור החוף ובנגב המערבי. ראשי חץ דומים מופיעים במרסין שבתורכיה ועל מונומנטים ממצרים וממסופוטמיה מסוף האלף הרביעי לפנה\"ס, כמו \"לוח הציידים\".",
+ learn:"ראש חץ רוחבי אינו נועץ אלא חותך, ונועד לגרום לדימום. המחברים הציעו שמסורת הכלים המיקרוליתיים נשמרה אצל קבוצות ציידים באזורי שוליים כמו מישור החוף והנגב, גם אחרי שנעלמה במרכז הארץ."},
+{y:"1970",vol:"כרך י'",t:"survey",he:"חפירות באתר הרצליה – 1969, דוח ראשוני",en:"Excavations at the Herzliya site, 1969",by:"מ. פראוסניץ, פ. בוריאן, א. פרידמן, א. ורשנר",
+ find:"באתר עינן אל-קיבלי (30/9), בין תל אביב להרצליה, נמצאו כלי צור חריגים מאז 1965. ב־1969 נמצא כד ממגורה ליד כירה, ובפסח אותה שנה נחפרו 125 מ\"ר: רצפות חלוקים, בורות ממגורה, כירות ותנורים, כלי חרס עבודי יד בחיפוי אדום, ויותר מ־500 כלי צור.",
+ learn:"שכבת יישוב אחת בלבד, מתחת לדיונה שהוסרה לצורכי בנייה. הגרעינים הקטנים ופסולת הייצור מראים שהכלים נעשו במקום. החפירה מומנה בחלקה בידי קבלנים פרטיים, דוגמה מוקדמת לשיתוף פעולה סביב פיתוח.",site:"30/9"},
+{y:"1973",vol:"כרך י\"א",t:"survey",he:"ציידים פרהיסטוריים בחולות חלוצה",en:"Prehistoric hunters in the dunes of Halutza",by:"פ. בוריאן, א. פרידמן",
+ find:"בין 1965 ל־1970 גילו 11 תחנות על מחשופי לס דרומית לנחל הבשור. נמצאו כ־600 ראשי חץ, בהם ראשי חץ רוחביים וצורות מעבר מסהרון חלואני לראש חץ פרימיטיבי, תופעה שלא הייתה ידועה עד אז בארץ. באתר 83 נמצא חרס כלקוליתי ועליו חריתה של \"עפיפון\", מלכודת ציד מדברית.",
+ learn:"הרבה ראשי חץ ומרצעים, כמעט בלי גרזנים ולהבי מגל. מהרכב הכלים הסיקו שאלה תחנות ציד של יושבי נחל הבשור, מהתקופה הכבארית ועד הברונזה הקדומה. הרכב הכלים מלמד על תפקוד האתר, לא רק על גילו.",site:"82–94"},
+{y:"1974",vol:"כרך י\"ב",t:"survey",he:"אתר חריפאי בנגב המערבי",en:"A Harifian site in the western Negev",by:"ע. בר-יוסף, פ. בוריאן, א. פרידמן",
+ find:"אתר נחל לבן 110, על הגדה השמאלית של נחל לבן. מכלול של התרבות החריפאית, סוף התקופה האפיפליאוליתית, שהוגדרה זמן קצר קודם לכן בהר חריף ובצפון סיני. כ־90% מהכלים עשויים על להבים ולהבונים, ובולטים בהם \"חודי חריף\".",
+ learn:"המאמר מבחין בין אתרי בסיס (כפרים עם מבנים מעוגלים בהר חריף) לבין אתרי ציד קטנים. איסוף קפדני של כל הפריטים, כולל הזעירים, אפשר לבחון את הטכנולוגיה באופן כמותי.",site:"110"},
+{y:"1975",vol:"כרך י\"ג",t:"survey",he:"אתרים פרהיסטוריים על יד נחל סקר",en:"Prehistoric sites in the Nahal Seker area",by:"פ. בוריאן, א. פרידמן",
+ find:"ארבעה אתרים כ־17 ק\"מ דרומית לבאר שבע: ניאולית קדם-קרמי ב', כלקולית, נטופי ואפיפליאולית. חומר הגלם נלקט מחלוקי הנחל, וסוג הצור הותאם לסוג הכלי.",
+ learn:"כאן הציעו לראשונה לחלק מחדש את התקופה הניאוליתית הקדם-קרמית לפי טיפולוגיה של ראשי חץ: אתרים עם ראשי חץ בעלי שקערוריות ותקע מוארך מול כל השאר. זה הזרע של הטיפולוגיה של 1979."},
+{y:"1976",vol:"כרך י\"ד",t:"survey",he:"אתר 109 – ניאולית קדם-קרמי ב' קדום",en:"An early PPNB site in the Nahal Lavan region – site no. 109",by:"פ. בוריאן, א. פרידמן, א. מינץ",
+ find:"האתר התגלה בדצמבר 1973 בין נחל לבן לנחל רות. 42% מהכלים ראשי חץ, רובם מטיפוס חלואן (טיפוס 4), גרזנים בעלי התזה רוחבית ולהבים בשינון דק. נמצאו כ־60 פריטי אובסידיאן, שמקורם הקרוב ביותר באנטוליה, וחרוזי ביצת יען.",
+ learn:"בבחינת ראשי חץ לא גמורים זיהו את שלבי הייצור של חוד חלואן. חלק מ\"הגרזנים\" הם אולי ראשי כידון. המסקנה: יישוב ציידים גדול, שאין כדוגמתו באזור.",site:"109"},
+{y:"1977–8",vol:"כרך ט\"ו",t:"tech",he:"החץ – חלקיו ושיטות הרכבתו",en:"The arrow: its parts and methods of its shafting",by:"פ. בוריאן, א. פרידמן",
+ find:"אחרי 25 שנות סיורים: 60 אתרים חדשים וכ־70,000 פריטים, בהם כ־7,500 ראשי חץ. החץ מורכב מקנה, ראש ונוצות. הקנים עשויים מענפים, חיזרן או סוף, והקשירה בגידים, מעיים או סיבי צמחים, מחוזקת בדבק משרף, מיצי צמחים וג'לטין מעורבב באדמה או באפר.",
+ learn:"לכל צורת ראש חץ שיטת הרכבה משלה. ראש בעל שקערוריות נקשר בחריץ, והשקערוריות מונעות את שליפתו מהפצע. ראש בעל תקע ננעץ בחור בקנה או בבסיס עצם. ראש רוחבי מורכב ברפיון, כי מטרתו לפצוע ולא לחדור. צורת הכלי מלמדת איך השתמשו בו."},
+{y:"1977–8",vol:"כרך ט\"ו",t:"survey",he:"אתר ניאוליתי חדש במערב שפלת החוף המרכזית (33/0A)",en:"A newly discovered Neolithic site in the coastal dune area (33/0A)",by:"פ. בוריאן, א. פרידמן",
+ find:"אתר על מדרון חמרה בדיונות ראשון לציון, קילומטר מהחוף. הכלים דומים לאתרים 26 ו־26A ושייכים לשלב הקדום של הניאולית הקדם-קרמי ב'. נמצאו שרידי מוקדים ועשרה בורות עגולים בקוטר 1–1.9 מטר.",
+ learn:"בתוך שש שנים הדיונות כיסו את האתר וחשפו אותו מחדש. הבורות נמדדו וצוירו בשטח בעזרת סטודנטים מאוניברסיטת תל אביב. בבדיקה של שניים מהם לא נמצא דבר, והמחברים ציינו בגלוי שאין עדיין הוכחה שהבורות והכלים בני תקופה אחת.",site:"33/0A"},
+{y:"1979",vol:"כרך ט\"ז",t:"typo",he:"טיפולוגיה של ראשי חץ ולהבי מגל והשלכותיה הכרונולוגיות",en:"A typology of arrowheads and sickle blades and its chronological implications",by:"פ. בוריאן, א. פרידמן",
+ find:"על בסיס כ־6,000 ראשי חץ וכ־2,500 להבי מגל מאתרים ניאוליתיים במישור החוף ובנגב המערבי: תשעה טיפוסי ראשי חץ וארבעה טיפוסי להבי מגל. ראשי החץ מתחלקים לשתי קבוצות גודל, עם גבול ב־4 ס\"מ, ומשקלו של ראש חץ לא עולה על 8 גרם.",
+ learn:"שכיחות הטיפוסים משתנה משלב לשלב, ולכן הרכב ראשי החץ באתר מאפשר תיארוך יחסי גם לאתר שנאסף מפני השטח בלבד. הרשימה נבנתה במכוון קצרה ופשוטה, כך שגם חובב יוכל להשתמש בה. ראו את הכלי האינטראקטיבי בהמשך העמוד."},
+{y:"1982",vol:"כרך י\"ז",t:"survey",he:"אתר 104 – ניאולית קדם-קרמי ב'",en:"Site 104 – Pre-Pottery Neolithic B",by:"פ. בוריאן, א. פרידמן",
+ find:"בסקר 1971–1977 במשולש נחלי לבן, רות וניצנה התגלו 13 אתרים. אתר 104, 10×13 מטר, התגלה ב־24.3.1973 על טרסת לס מעל נחל לבן. נאספו כל הפריטים: 83 ראשי חץ מטיפוסים 5, 6 ו־7, ו־177 להבים לא משובררים עם סימני שימוש.",
+ learn:"שילוב של הטיפולוגיה עם אתר חד-תקופתי: טיפוס 7 דומיננטי, טיפוס 4 נעלם, ולכן זהו אתר ציד מהשלב המאוחר של הניאולית הקדם-קרמי ב'. מול האתר, בצד השני של הנחל, אתר כבארי גאומטרי גדול (105).",site:"104"},
+{y:"1985",vol:"כרך י\"ח",t:"typo",he:"תיארוך בעזרת ראשי חיצים מצור",en:"Dating according to flint arrowhead types",by:"א. פרידמן (הרצאה, יפו, פברואר 1984)",
+ find:"שש שנים אחרי הטיפולוגיה הציע פרידמן רעיון חדש: להשוות מכלולים לפי ראשי חץ חריגים. ראשי חץ חריגים מחולות חלוצה דומים מאוד לאלה מנחל רעואל שבבקעת עובדה, ולכן תאריכי פחמן 14 של נחל רעואל, השליש השני של האלף השביעי לפנה\"ס, מתאימים גם לחלוצה.",
+ learn:"גם אתרי החוף ניצנים, זיקים, גבעת הפרסה והרצליה נושאים מכלול זהה של ראשי חץ, ולכן תאריך אחד מניצנים (4790±90 לפנה\"ס) מתארך את כולם לשליש הראשון של האלף החמישי לפנה\"ס. תאריך מוחלט אחד, יחד עם השוואה טיפולוגית, מתארך קבוצת אתרים שלמה."},
+{y:"1985",vol:"כרך י\"ח",t:"tech",he:"שיטות לסיתות מקדחי צור והשימוש בהם",en:"Flint borers: methods of production and use",by:"פ. בוריאן (הרצאה, יפו, פברואר 1984)",
+ find:"אלפי מקדחים זעירים, באורך ממוצע של כ־15 מ\"מ, מאתר 103. אפשר לשחזר את כל שלבי הייצור: בחירת חלוקי נחל, התזת נתזים, יצירת \"כתפי\" המקדח והכנת הקצה הפעיל.",
+ learn:"מקדח כה קטן חייב היה להיות מורכב על קת. בוריאן שחזר שלוש שיטות הפעלה: גלגול הקת בין כפות הידיים, מקדח קשת עם ידית תומכת (כמו אצל האינואיטים, שאוחזים אותה בפה), ומקדח עם גלגל תנופה. העקרונות זהים לאלה של מקדחה מודרנית."},
+{y:"1987",vol:"כרך כ'",t:"tech",he:"תעשיית מקדחי צור באתר הכלקוליתי 103 – נחל ניצנה",en:"A Chalcolithic borer industry at site 103 – Nahal Nitzana",by:"פ. בוריאן, א. פרידמן",
+ find:"האתר התגלה ב־26.8.1972 על צידו הצפוני של נחל ניצנה. ב־35 ביקורים נאספו 7,052 כלי צור, מהם 6,237 מקדחים (2,258 שבורים), בממוצע 15×10×3 מ\"מ. נמצאו גם צדפי שן-ים, חלקם כנראה מים סוף, חרוזים מאבן ירוקה ואבני גיר חרותות.",
+ learn:"ריכוז כזה של מקדחים מעיד על סדנה מתמחה, כנראה לקידוח חרוזים. המאמר מתעד גם את ההרס: צידו המזרחי של האתר נהרס בפיתוח, והדרומי בסלילת כביש בתקופת המנדט.",site:"103"},
+{y:"1988",vol:"כרך כ\"א",t:"tech",he:"ממצא האובסידיאן מאתר נחל לבן 109",en:"A note on the obsidian finds from the PPNB site 109 near Nahal Lavan",by:"פ. בוריאן, א. פרידמן",
+ find:"ב־77 ביקורים נאספו באתר 109: 2,023 ראשי חץ, כולם מטיפוס חלואן, 296 גרזנים, ו־356 פריטי אובסידיאן במשקל כולל של 452 גרם. בדיקת מקור של 22 פריטים הראתה שכולם הגיעו מגולו דאג (Göllü Dağ) שבאנטוליה.",
+ learn:"כלי האובסידיאן זהים לכלי הצור המקומי, ונמצאו גם נתזים וכלים לא גמורים. כלומר: חומר הגלם הגיע מאות קילומטרים, ועובד באתר עצמו. המחברים נזהרו מלייחס לו חשיבות פולחנית בלי ראיות.",site:"109"},
+{y:"1989",vol:"כרך כ\"ב",t:"typo",he:"הערות לגבי התיארוך של גבעת הפרסה ואתר נחל לבן 109 בעזרת פחמן 14, ולגבי השימוש בקליפות עתיקות של ביצי יענים לייצור חרוזים",en:"A note concerning the 14C dating of Giv'at Haparsa and Nahal Lavan 109",by:"פ. בוריאן, א. פרידמן",
+ find:"אפר ממוקד בגבעת הפרסה נתן 4,150±1,200 לפנה\"ס, תואם להערכה של 5,000–4,500 לפנה\"ס. באתר 109 נתנו חרוזים מקליפה אפורה ומפוטנת 19,650±1,200 לפנה\"ס, וקליפות לבנות 8,000±220 לפנה\"ס, שהוא התאריך האמיתי של האתר.",
+ learn:"מתוך 1,978 חרוזים, 144 נעשו מקליפות כהות ועתיקות. יושבי האתר בחרו בכוונה קליפות שכבר היו בנות אלפי שנים, אולי בגלל צבען או חוזקן. שיעור חשוב בתיארוך: לבדוק מה בדיוק נדגם."},
+{y:"1989",vol:"כרך כ\"ב",t:"survey",he:"צלמית אבן מסביבת נחל רות שבנגב המערבי",en:"A stone figurine from the vicinity of Nahal Ruth",by:"ש. לב-ידון, פ. בוריאן, א. פרידמן",
+ find:"באתר 100, צפונית לנחל רות, נמצאה צלמית מאבן גיר: 3 גרם, 27 מ\"מ, דמות אדם עם רגליים קצרות, חריצים לידיים ושני שקעים שאולי מסמנים עיניים. כנראה מהתקופה הניאוליתית.",
+ learn:"אתר 100 הוא אתר רב-תקופתי, מהנטופית ועד הכלקולית, ששימש לחניות קצרות של ציידים-לקטים במשך אלפי שנים. ממצא משטח של אתר כזה קשה לתארוך, והמחברים אמרו זאת במפורש.",site:"100"},
+{y:"1994–5",vol:"כרך כ\"ו",t:"tech",he:"הרכבה על ידית בתקופה המוסטרית – עדות נוספת",en:"Hafting during Mousterian times – further indication",by:"א. פרידמן, נ. גורן-ענבר, א. רוזנפלד, ע. מרדר, פ. בוריאן",
+ find:"מגרד מוסטרי בן 54,000 שנה מקוניטרה שברמת הגולן נושא דפוס פטינה יוצא דופן בשני צדדיו. בניסוי, שלושה נתזים מצור שחור הורכבו על ידית והושארו באוויר הפתוח חצי שנה. על החלקים החשופים התפתחה פטינה אפורה-לבנה, והחלקים המורכבים נשארו כהים.",
+ learn:"הפטינה נוצרת כנראה מפעילות חיידקים על פני הצור. הגבול בין אזור מפוטן ללא מפוטן יכול לשמש סימן להרכבה על ידית, ולכן גם הקהילה המוסטרית ליד אגם קוניטרה השתמשה בכלים מורכבים. פרידמן נפטר לפני פרסום המאמר.",
+ note:"זה המאמר שבסריקות בתיקייה \"מאסף אפי-פליאוליתי מאזור נחל פולג\". ראו הערה בתחתית העמוד."},
+{y:"1994–5",vol:"כרך כ\"ו",t:"tribute",he:"אריך פרידמן – שנה לפטירתו",en:"In memory of Erich Friedman",by:"תמר נוי",
+ find:"דברי הספד על אריך, ממייסדי העמותה הישראלית לפרהיסטוריה, שנפטר ב־1 במאי 1994 אחרי מאבק ארוך במחלה ששמר לעצמו. הכרך כולו הוקדש לזכרו, ורבים מהמאמרים בו נכתבו איתו או התבססו על עבודת השדה שלו ושל פליקס.",
+ learn:"הדיוקן של אריך: עולה צעיר שהגיע לבד, פועל בבית חרושת, שהפך לגזבר העמותה, למורה באוניברסיטה ולמארח של כל מי שרצה ללמוד. ההספד מסתיים בנכד שהבטיח להמשיך."},
+{y:"1998",vol:"כרך כ\"ח",t:"survey",he:"אתרים פרהיסטוריים על גדתו הצפונית של נחל פולג: הערכה מחודשת של האתר 18M",en:"Prehistoric sites on the northern bank of Nahal Poleg: site 18M revisited",by:"א. גופר, פ. בוריאן, א. פרידמן (ז\"ל)",
+ find:"תשעה אתרים שבוריאן ופרידמן גילו ב־1955–1956 ובשנות השישים ליד שפך נחל פולג, ונחפרו בחפירת הצלה עם מ. פראוסניץ כשנסלל כביש. ניתוח מחדש של אתר 18M מראה שני רכיבים: נטופי מאוחר, וחיאמי (ניאולית קדם-קרמי א'), שזוהה לפי חודי אל-חיאם.",
+ learn:"האזור נהרס כמעט כולו בפיתוח, אבל האוסף המתועד אפשר לחזור אליו כעבור ארבעים שנה ולהעלות שאלה חדשה: האם היו אתרים קטנים מהניאולית הקדם-קרמי א' במישור החוף.",site:"18M",link:"https://www.jstor.org/stable/23380076"},
+{y:"2017",vol:"כרך מ\"ז",t:"tribute",he:"פליקס בוריאן: תרומתו המיוחדת, יחד עם אריך פרידמן, לחקר הפרהיסטוריה של ישראל",en:"Felix Burian: his special contributions, along with Erich Friedman, to the study of Israel's prehistory",by:"שמחה לב-ידון",
+ find:"פליקס נפטר ב־27 באפריל 2017, שבועות אחרי יום הולדתו ה־93 וכמעט בדיוק 23 שנה אחרי אריך. לב-ידון, שהכיר אותם כנער דרך מאמר ב\"טבע וארץ\" ותערוכה במוזיאון ישראל, מסכם: כ־70 אתרים חדשים, יותר מ־30 מאמרים, ושותפות של אלפי סיורים משותפים.",
+ learn:"לפי צוואתם המשותפת מ־1976 אוחד האוסף אצל פליקס, שסידר 150,000 פריטי צור, בהם 12,000 ראשי חץ. אחרי שאוניברסיטת חיפה ביטלה את ההסכם, מצא האוסף בית במוזיאון הפתוח בתפן, \"אנדרטה מדעית וחינוכית לשותפות הייחודית\"."}
+];
+const SITES=[
+ {id:"18M",nm:"נחל פולג 18M",d:"שפך נחל פולג, נתניה. נטופי מאוחר וחיאמי.",e:135.3,n:187.5},
+ {id:"30/9",nm:"הרצליה, עינן אל-קיבלי",d:"ניאולית קרמי. נחפר ב־1969.",e:130.9,n:172.3},
+ {id:"33/0A",nm:"דיונות ראשון לציון",d:"ניאולית קדם-קרמי ב' קדום. עשרה בורות עגולים.",e:125.0,n:153.8},
+ {id:"62",nm:"גבעת הפרסה",d:"ניאולית קרמי, צפונית לאשדוד. 112 מוקדים.",e:117,n:138},
+ {id:"82–94",nm:"חולות חלוצה",d:"11 תחנות ציד דרומית לנחל הבשור.",e:109.1,n:62.5},
+ {id:"סקר",nm:"נחל סקר",d:"4 אתרים, 17 ק\"מ דרומית לבאר שבע.",e:133.0,n:56.1},
+ {id:"110",nm:"נחל לבן 110",d:"אתר חריפאי, סוף האפיפליאולית.",e:99.6,n:37.6},
+ {id:"109",nm:"נחל לבן 109",d:"ניאולית קדם-קרמי ב' קדום. אובסידיאן מאנטוליה.",e:99.3,n:37.0},
+ {id:"104",nm:"אתר 104",d:"ניאולית קדם-קרמי ב' מאוחר. אתר ציד.",e:95.5,n:38.3},
+ {id:"103",nm:"אתר 103, נחל ניצנה",d:"כלקולית. 6,237 מקדחים.",e:93.9,n:38.8},
+ {id:"100",nm:"אתר 100, נחל רות",d:"רב-תקופתי. צלמית אבן.",e:99.0,n:34.0}
+];
+const TOWNS=[["חדרה",139.5,205],["נתניה",136.5,191],["תל אביב–יפו",127,164],["אשדוד",116.5,131],["אשקלון",108,119],["עזה",98,101],["באר שבע",130,72],["ניצנה",96,30]];
+const COAST=[[143,214],[139.5,205],[137,195],[136,190],[133,182],[131,175],[128,168],[126,162],[123,155],[120,148],[116,136],[110,124],[107,119],[101,108],[97,101],[88,90],[79,80]];
+const BORDER=[[79,80],[94.6,31],[97,22]];
+// map projection
+const E0=72,N0=216,K=3.2;
+const px=e=>((e-E0)*K).toFixed(1), py=n=>((N0-n)*K*0.94+8).toFixed(1);
+const svg=document.getElementById('mapsvg');
+const ns="http://www.w3.org/2000/svg";
+function el(t,a,txt){const x=document.createElementNS(ns,t);for(const k in a)x.setAttribute(k,a[k]);if(txt!=null)x.textContent=txt;return x}
+// sea
+svg.appendChild(el('rect',{x:0,y:0,width:300,height:640,fill:'var(--sea)'}));
+// land polygon: coast + border + east edge
+let land=COAST.map(p=>px(p[0])+','+py(p[1])).join(' ')+' '+BORDER.slice(1).map(p=>px(p[0])+','+py(p[1])).join(' ')+` 300,${py(22)} 300,0 ${px(143)},0`;
+svg.appendChild(el('polygon',{points:land,fill:'var(--land)',stroke:'var(--flint-2)','stroke-width':1}));
+svg.appendChild(el('polyline',{points:BORDER.map(p=>px(p[0])+','+py(p[1])).join(' '),fill:'none',stroke:'var(--flint-2)','stroke-width':1,'stroke-dasharray':'4 3'}));
+svg.appendChild(el('text',{x:24,y:200,class:'town','font-size':'12',fill:'var(--muted)','font-style':'italic'},'הים התיכון'));
+// survey band label
+svg.appendChild(el('text',{x:px(140),y:py(147),class:'town','font-size':'9.5'},'סקר מישור החוף 1954–'));
+svg.appendChild(el('text',{x:px(118),y:py(48),class:'town','font-size':'9.5'},'סקר הנגב המערבי'));
+TOWNS.forEach(t=>{svg.appendChild(el('circle',{cx:px(t[1]),cy:py(t[2]),r:1.8,fill:'var(--muted)'}));svg.appendChild(el('text',{x:(+px(t[1])+5).toFixed(1),y:(+py(t[2])+3).toFixed(1),class:'town','text-anchor':'start'},t[0]))});
+// inset box around Nitzana cluster
+svg.appendChild(el('rect',{x:px(92.5),y:py(40.5),width:((101-92.5)*K).toFixed(1),height:((40.5-32.8)*K*0.94).toFixed(1),fill:'none',stroke:'var(--ink)','stroke-width':.7,'stroke-dasharray':'2 2'}));
+const dots={};
+SITES.forEach(s=>{
+  const c=el('circle',{cx:px(s.e),cy:py(s.n),r:4.2,class:'dot','data-id':s.id});
+  const tt=el('title',{},s.nm);c.appendChild(tt);svg.appendChild(c);dots[s.id]=c;
+});
+// labels for non-cluster sites
+SITES.filter(s=>s.n>45).forEach(s=>{svg.appendChild(el('text',{x:(+px(s.e)-7).toFixed(1),y:(+py(s.n)+3).toFixed(1),class:'sitelbl','text-anchor':'end'},s.id))});
+svg.appendChild(el('text',{x:(+px(92.5)-4).toFixed(1),y:(+py(37)).toFixed(1),class:'sitelbl','text-anchor':'end'},'100–110'));
+// site list
+const sl=document.getElementById('sitelist');
+SITES.forEach(s=>{
+  const b=document.createElement('button');b.type='button';b.className='site';b.dataset.id=s.id;
+  b.innerHTML=`<span class="no">${s.id}</span><span><b>${s.nm}</b><p>${s.d}</p></span>`;
+  b.addEventListener('click',()=>sel(s.id));sl.appendChild(b);
+});
+function sel(id){
+  document.querySelectorAll('.site').forEach(x=>x.classList.toggle('on',x.dataset.id===id));
+  Object.entries(dots).forEach(([k,c])=>{c.classList.toggle('on',k===id);c.setAttribute('r',k===id?7:4.2)});
+}
+Object.entries(dots).forEach(([k,c])=>{c.style.cursor='pointer';c.addEventListener('click',()=>sel(k))});
+
+// articles
+const cards=document.getElementById('cards');
+A.forEach(a=>{
+  const d=document.createElement('article');d.className='card';d.dataset.t=a.t;
+  d.innerHTML=`<div class="hd"><span class="yr">${a.y}</span><span class="vol">מתקופת האבן · ${a.vol}${a.site?'<br>אתר '+a.site:''}</span></div>
+  <div class="bd"><h3>${a.he}</h3><p class="en">${a.en}</p><p class="by">${a.by}</p><span class="tag">${THEMES[a.t]}</span>
+  <p class="find">${a.find}</p>
+  <details><summary>מה לומדים מזה היום</summary><p class="learn">${a.learn}</p>${a.note?`<p class="note">${a.note}</p>`:''}${a.link?`<p class="note"><a href="${a.link}" target="_blank" rel="noopener">המאמר ב־JSTOR</a></p>`:''}</details></div>`;
+  cards.appendChild(d);
+});
+const fl=document.getElementById('filters');
+const cnt=t=>A.filter(a=>t==='all'||a.t===t).length;
+[['all','הכול'],...Object.entries(THEMES)].forEach(([k,v],i)=>{
+  const b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed',i===0?'true':'false');b.dataset.k=k;
+  b.innerHTML=`${v}<span class="count">${cnt(k)}</span>`;
+  b.addEventListener('click',()=>{fl.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));
+    document.querySelectorAll('.card').forEach(c=>c.hidden=!(k==='all'||c.dataset.t===k))});
+  fl.appendChild(b);
+});
+
+// typology
+const T=[
+ {n:1,nm:"חוד חריף",p:"M30 8 L42 48 L31 94 L19 56 Z",st:["harif"],d:"חוד רומבואידי על להבון קצר; צלע אלכסונית מוארכת ובסיס משולש. נעשה גם בטכניקת הנקר המיקרוליתי."},
+ {n:2,nm:"מאורך דמוי סהרון",p:"M30 6 C44 30 44 60 34 76 L34 94 L27 94 L27 78 C22 58 24 30 30 6 Z",st:[],d:"ראש חץ מאורך, צלע אחת קמורה והשנייה ישרה, ותקע. בסיכום 1979 לא שויך לשלב מסוים, ולכן אינו משפיע על התשובה."},
+ {n:3,nm:"חוד אל-חיאם",p:"M30 6 L44 78 L40 78 L41 84 L45 84 L46 94 L14 94 L15 84 L19 84 L20 78 L16 78 Z",st:["ppna"],d:"ראש חץ משולש, בסיס קטום ישר או קעור; בווריאנט השני זוג שקערוריות ליד הבסיס."},
+ {n:4,nm:"חוד חלואן",p:"M30 6 L42 48 L38 52 L42 57 L38 61 L41 66 L34 70 L34 94 L26 94 L26 70 L19 66 L22 61 L18 57 L22 52 L18 48 Z",st:["ppnbE"],d:"ראש חץ בעל תקע ושקערוריות מקבילות, לעיתים כמה זוגות. שולט בשלב הקדום של הניאולית הקדם-קרמי ב' ונעלם בשלב המאוחר."},
+ {n:5,nm:"דמוי עלה",p:"M30 4 C44 30 44 70 30 96 C16 70 16 30 30 4 Z",st:["ppnbE","ppnbL","pnE","pnL"],d:"ראש חץ מאורך, סגלגל או דמוי עלה, מתחדד בשני קצותיו. מעוצב בשברור לחץ."},
+ {n:6,nm:"תקע וכתפיים משתלבות",p:"M30 4 C44 26 44 56 34 70 L34 96 L26 96 L26 70 C16 56 16 26 30 4 Z",st:["ppnbE","ppnbL","pnE","pnL"],d:"ראש חץ מאורך בעל תקע וגוף סגלגל; הכתפיים יוצרות מעבר רציף בין הגוף לתקע."},
+ {n:7,nm:"תקע וכתפיים ישרות",p:"M30 4 L42 66 L34 66 L34 96 L26 96 L26 66 L18 66 Z",st:["ppnbE","ppnbL","pnE","pnL"],d:"ראש חץ בעל תקע וכתפיים בזווית ישרה לגוף משולש מוארך."},
+ {n:8,nm:"תקע וכנפיים (חוד הפרסה)",p:"M30 30 L41 70 L44 82 L34 75 L34 92 L26 92 L26 75 L16 82 L19 70 Z",st:["pnL"],d:"ראש חץ קצר (לרוב פחות מ־4 ס\"מ) בעל תקע וכנפיים, מעוצב בשברור לחץ. שולט בשלב המאוחר של הניאולית הקרמי, כמו בגבעת הפרסה."},
+ {n:9,nm:"רוחבי",p:"M10 32 L50 32 L41 72 L19 72 Z",st:["pnL","chalco"],d:"מקטע אמצעי של להב, שקצותיו נשברו וצדדיו שוברו לצורת טרפז. מופיע לראשונה בסוף הניאולית הקרמי, ושורד בתקופה הכלקוליתית."}
+];
+const P=[
+ {k:"harif",nm:"חריפאי",s:"סוף האפיפליאולית"},
+ {k:"ppna",nm:"קדם-קרמי א'",s:"PPNA"},
+ {k:"ppnbE",nm:"קדם-קרמי ב' קדום",s:"PPNB"},
+ {k:"ppnbL",nm:"קדם-קרמי ב' מאוחר",s:"PPNB"},
+ {k:"pnE",nm:"קרמי קדום",s:"PN"},
+ {k:"pnL",nm:"קרמי מאוחר",s:"PN"},
+ {k:"chalco",nm:"כלקולית",s:"Chalcolithic"}
+];
+const EX={harif:"כמו נחל לבן 110.",ppna:"כמו נחל לבן 108, אל-חיאם ונחל אורן.",ppnbE:"כמו אתר 26, נחל לבן 109 ונחל בוקר.",ppnbL:"כמו ניצנה, אבו גוש ונחל לבן 104.",pnE:"כאן מבחינים לפי להבי המגל ולפי הופעת חרסים.",pnL:"כמו גבעת הפרסה, ניצנים והרצליה.",chalco:"כמעט כל ראשי החץ נעלמים, פרט לרוחביים."};
+const tg=document.getElementById('typo');const chosen=new Set([4]);
+T.forEach(t=>{
+  const b=document.createElement('button');b.type='button';b.className='tp';b.setAttribute('aria-pressed',chosen.has(t.n)?'true':'false');
+  b.innerHTML=`<svg viewBox="0 0 60 100" aria-hidden="true"><path d="${t.p}"/></svg><span class="n">טיפוס ${t.n}</span><span class="nm">${t.nm}</span>`;
+  b.addEventListener('click',()=>{chosen.has(t.n)?chosen.delete(t.n):chosen.add(t.n);b.setAttribute('aria-pressed',chosen.has(t.n)?'true':'false');judge()});
+  tg.appendChild(b);
+});
+const pr=document.getElementById('periods');
+P.forEach(p=>{const d=document.createElement('div');d.className='pd';d.dataset.k=p.k;d.innerHTML=`<b>${p.nm}</b>${p.s}`;pr.appendChild(d)});
+function judge(){
+  const sel=T.filter(t=>chosen.has(t.n)&&t.st.length);
+  let hit=null;
+  if(sel.length){hit=P.map(p=>p.k).filter(k=>sel.every(t=>t.st.includes(k)));}
+  // refinement from the 1979 table: type 4 disappears in late PPNB
+  if(hit&&hit.length>1&&!chosen.has(4)&&sel.length&&hit.includes('ppnbE')&&sel.every(t=>[5,6,7].includes(t.n))){hit=hit.filter(k=>k!=='ppnbE')}
+  pr.querySelectorAll('.pd').forEach(d=>d.classList.toggle('hit',!!hit&&hit.includes(d.dataset.k)));
+  const ans=document.getElementById('answer');
+  let h,p;
+  if(!chosen.size){h="בחרו טיפוס אחד או יותר";p="לחצו על ראשי החץ שמעל. אפשר לבחור כמה טיפוסים יחד, כמו באתר אמיתי."}
+  else if(!sel.length){h="אין מספיק מידע";p="טיפוס 2 לבדו לא שויך במאמר לשלב מסוים. הוסיפו טיפוסים נוספים."}
+  else if(!hit.length){h="אין שלב אחד שמתאים לכולם";p="ייתכן שזה אתר רב-תקופתי, כמו אתר 100 ליד נחל רות, ששימש ציידים מהנטופית ועד הכלקולית. בדיוק בגלל זה אספו בוריאן ופרידמן כל אתר בנפרד וסימנו כל פריט במספר האתר."}
+  else{const names=hit.map(k=>P.find(p=>p.k===k).nm);h=hit.length===1?"התשובה: "+names[0]:"מתאים ל: "+names.join(" · ");
+    p=hit.map(k=>EX[k]).join(" ")+(hit.length>1?" כדי לצמצם, החוקרים השוו את שכיחות הטיפוסים ואת סוגי להבי המגל.":"")}
+  ans.innerHTML=`<h3>${h}</h3><p>${p}</p><button type="button" class="btn" id="reset">ניקוי הבחירה</button>`;
+  document.getElementById('reset').addEventListener('click',()=>{chosen.clear();tg.querySelectorAll('.tp').forEach(x=>x.setAttribute('aria-pressed','false'));judge()});
+}
+judge();
+document.getElementById('typodesc').innerHTML=T.map(t=>`<p><b>טיפוס ${t.n}</b> · ${t.nm}: ${t.d}</p>`).join('');
+
+// references
+const R=[
+"בוריאן פ., פרידמן א. 1961. גבעת הפרסה – אתר פריהיסטורי באזור חולות החוף בדרום הארץ. מתקופת האבן ב: 43–54.",
+"בוריאן פ., פרידמן א. 1963–5. עשר שנות סקר פריהיסטורי של עמק החוף מנחל חדרה עד נחל לכיש. מתקופת האבן ו–ז: 1–33.",
+"בר-יוסף ע., בוריאן פ., פרידמן א. 1970. ראשי-חץ רוחביים ממישור החוף. מתקופת האבן י: 22–24.",
+"פראוסניץ מ., בוריאן פ., פרידמן א., ורשנר א. 1970. חפירות באתר הרצליה – 1969, דוח ראשוני. מתקופת האבן י: 11–16.",
+"בוריאן פ., פרידמן א. 1973. ציידים פרהיסטוריים בחולות חלוצה. מתקופת האבן י\"א: 27–34.",
+"בר-יוסף ע., בוריאן פ., פרידמן א. 1974. אתר חריפאי בנגב המערבי. מתקופת האבן י\"ב: 10–14.",
+"בוריאן פ., פרידמן א. 1975. אתרים פרהיסטוריים על יד נחל סקר. מתקופת האבן י\"ג: 59–69.",
+"בוריאן פ., פרידמן א., מינץ א. 1976. אתר 109 – ניאולית קדם-קרמי ב'. מתקופת האבן י\"ד: 50–60.",
+"בוריאן פ., פרידמן א. 1977–8. החץ – חלקיו ושיטות הרכבתו. מתקופת האבן ט\"ו.",
+"בוריאן פ., פרידמן א. 1977–8. אתר ניאוליתי חדש במערב שפלת החוף המרכזית (33/0A). מתקופת האבן ט\"ו.",
+"בוריאן פ., פרידמן א. 1979. טיפולוגיה של ראשי חץ ולהבי מגל והשלכותיה הכרונולוגיות. מתקופת האבן ט\"ז: 1–16. <a href='https://www.jstor.org/stable/23385616' target='_blank' rel='noopener'>JSTOR</a>",
+"בוריאן פ., פרידמן א. 1982. אתר 104 – ניאולית קדם-קרמי ב'. מתקופת האבן י\"ז: 71–78.",
+"בוריאן פ., פרידמן א. 1985. תיארוך בעזרת ראשי חיצים מצור. מתקופת האבן י\"ח: 47–50.",
+"בוריאן פ., פרידמן א. 1985. שיטות לסיתות מקדחי צור והשימוש בהם. מתקופת האבן י\"ח: 51–53. <a href='https://www.jstor.org/stable/23385643' target='_blank' rel='noopener'>JSTOR</a>",
+"בוריאן פ., פרידמן א. 1987. תעשיית מקדחי צור באתר הכלקוליתי 103 – נחל ניצנה. מתקופת האבן כ: 82–84, *160–*172.",
+"בוריאן פ., פרידמן א. 1988. ממצא האובסידיאן מאתר נחל לבן 109. מתקופת האבן כ\"א: 58–59, *95–*98.",
+"בוריאן פ., פרידמן א. 1989. הערות לגבי התיארוך של גבעת הפרסה ונחל לבן 109 בעזרת פחמן 14. מתקופת האבן כ\"ב: 50–51, *93–*94.",
+"לב-ידון ש., בוריאן פ., פרידמן א. 1989. צלמית אבן מסביבת נחל רות שבנגב המערבי. מתקופת האבן כ\"ב: 44, *78–*81.",
+"פרידמן א., גורן-ענבר נ., רוזנפלד א., מרדר ע., בוריאן פ. 1994–5. Hafting during Mousterian times – further indication. מתקופת האבן כ\"ו: 8–31.",
+"נוי ת. 1994–5. אריך פרידמן – שנה לפטירתו. מתקופת האבן כ\"ו: *5–*6. <a href='https://www.jstor.org/stable/23380051' target='_blank' rel='noopener'>JSTOR</a>",
+"ברקאי ר., בוריאן פ., פרידמן א., גופר א. 1994–5. 18X – מאסף אפי-פליאוליתי מאזור נחל פולג. מתקופת האבן כ\"ו: 64–73. <a href='https://www.jstor.org/stable/23380044' target='_blank' rel='noopener'>JSTOR</a>",
+"גופר א., בוריאן פ., פרידמן א. 1998. אתרים פרהיסטוריים על גדתו הצפונית של נחל פולג: הערכה מחודשת של האתר 18M. מתקופת האבן כ\"ח: 81–104. <a href='https://www.jstor.org/stable/23380076' target='_blank' rel='noopener'>JSTOR</a>",
+"לב-ידון ש. 2017. Felix Burian: his special contributions, along with Erich Friedman, to the study of Israel's prehistory. מתקופת האבן מ\"ז: 251–254."
+];
+document.getElementById('reflist').innerHTML=R.map(r=>`<li>${r}</li>`).join('');
+})();
+</script>
+</body></html>
